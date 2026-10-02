@@ -6,6 +6,9 @@
 <title>Bonaksu Gaming – Tournaments</title>
 <meta name="theme-color" content="#06060c">
 <meta name="description" content="Register your team, follow live brackets and see the Hall of Champions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,4 90,27 90,73 50,96 10,73 10,27' fill='%230b0b16' stroke='%23ff1a8c' stroke-width='6'/%3E%3C/svg%3E">
 <style>
 :root{--bg:#06060c;--bg2:#0b0b16;--panel:#0e0e1a;--panel2:#151526;--line:#24243a;--line2:#34345a;--text:#f4f4fb;--mute:#8f8fab;--pink:#ff1a8c;--pink2:#ff63b0;--rose:#e87c8d;--plum:#4b0f45;--maroon:#2a0a12;--green:#26e0a0;--amber:#ffb020;--red:#ff4d6d;--blue:#5865f2;
@@ -424,106 +427,6 @@ nav.m{margin-left:8px;gap:2px}nav.m a{white-space:nowrap;padding:10px 12px}
 @media(max-width:820px){nav.m,.hact .btn.w{display:none}.burger{display:block}header .hbar{gap:12px;height:68px}.brand b{font-size:13px;letter-spacing:2px;white-space:nowrap}.brand small{display:none}.brand svg,.brand img{width:38px;height:38px}.hact{display:none}.burger{margin-top:6px}header .hb{width:60%;height:14px}.hero h1{font-size:clamp(40px,13vw,64px)}.stats b{font-size:28px}.emblem{max-width:280px}.sh h2{font-size:34px}.mbox{padding:22px 18px}.tabs a{padding:9px 12px;font-size:11px}.cta .btn{width:100%}.rr{grid-template-columns:1fr;gap:6px}.f .two{grid-template-columns:1fr}.qr{flex-direction:column;text-align:center}.mq .mqi{font-size:18px}.hero{padding-top:110px}.sg{gap:10px}.sg input{width:64px}footer .fg{grid-template-columns:1fr}.stats{gap:26px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}#pre{display:none}}
 
-/* ===== Demo build: deliberately plain look (flat shapes, system font, no heavy effects) ===== */
-body.lite{--f:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--fo:var(--f);--bg:#0e0e13;background:#0e0e13}
-body.lite:before,body.lite #cur,body.lite #prog,body.lite #wipe,body.lite #pre,body.lite header .hb,body.lite .mq,body.lite .big,body.lite .gl,body.lite .poster:after,body.lite .card:after,body.lite .box h3:before,body.lite .sh .k,body.lite footer:before,body.lite .cta,body.lite .top{display:none!important}
-body.lite *{-webkit-font-smoothing:auto}
-body.lite h1,body.lite h2,body.lite h3,body.lite h4,body.lite h5{text-transform:none;letter-spacing:0;font-weight:700}
-body.lite .mono,body.lite .prize,body.lite .stats b,body.lite .cd b,body.lite .kpi b,body.lite .qr .amt,body.lite .pod .amt,body.lite .pod .pl,body.lite .ref,body.lite .tl b{font-family:var(--f)}
-/* header */
-body.lite header{background:#0e0e13;border-bottom:1px solid #26262e;box-shadow:none}
-body.lite header:after{display:none}
-body.lite header .hbar,body.lite header.sc .hbar{height:64px}
-body.lite .brand b{font:700 18px var(--f);letter-spacing:0}
-body.lite .brand small{display:none}
-body.lite .brand svg,body.lite .brand img,body.lite header.sc .brand svg{width:34px;height:34px}
-body.lite nav.m a{text-transform:none;letter-spacing:0;font-size:15px;font-weight:600}
-body.lite nav.m a:after{display:none}
-body.lite nav.m a.on{color:var(--pink2)}
-/* buttons */
-body.lite .btn{clip-path:none;border-radius:6px;text-transform:none;letter-spacing:0;font:600 14px var(--f);padding:10px 18px}
-body.lite .btn:before{display:none}
-body.lite .btn.sm{padding:7px 14px;font-size:13px}
-body.lite .btn.lg{padding:12px 24px;font-size:15px}
-body.lite .btn.pulse{animation:none}
-body.lite .btn:active{transform:none}
-/* hero */
-body.lite .hero.lite-h{min-height:0;display:block;padding:130px 0 56px;background:#14141b;border-bottom:1px solid #26262e;overflow:visible}
-body.lite .hero.lite-h h1{font:700 44px/1.15 var(--f);margin-bottom:14px}
-body.lite .hero.lite-h .lead{color:#b9b9c6;font-size:17px;margin:0 0 24px;max-width:560px}
-body.lite section{padding:56px 0}
-body.lite section.dark{background:#12121a;border-block:1px solid #22222c}
-body.lite section.tx:before{display:none}
-body.lite .sh h2{font-size:28px}
-body.lite .sh h2 em{-webkit-text-stroke:0;color:inherit;font-style:normal}
-body.lite .more{text-transform:none;letter-spacing:0;font-size:14px}
-/* cards */
-body.lite .cut{clip-path:none}
-body.lite .card{background:#16161d;border:1px solid #26262e;border-radius:8px;overflow:hidden;box-shadow:none}
-body.lite .card.h:hover{transform:translateY(-2px);box-shadow:none;border-color:#3a3a46}
-body.lite .poster img{transition:none}
-body.lite .card.h:hover .poster img{transform:none}
-body.lite .badge{text-transform:none;letter-spacing:0;font-size:12px;border-radius:4px;background:#000a}
-body.lite .badge.open:before,body.lite .badge.live:before{animation:none}
-body.lite .cb h3{font-size:20px}
-body.lite .meta div,body.lite .slots{text-transform:none;letter-spacing:0;font-size:12px}
-body.lite .bar,body.lite .bar i{border-radius:3px}
-body.lite .bar i{box-shadow:none}
-body.lite .chip{letter-spacing:0;text-transform:none;border-radius:4px}
-/* champions */
-body.lite .champ{aspect-ratio:auto;padding:22px;border:1px solid #26262e;border-radius:8px;background:#16161d;display:block}
-body.lite .champ:before,body.lite .champ .art,body.lite .champ .no{display:none}
-body.lite .champ:hover{transform:none;box-shadow:none}
-body.lite .champ .em{position:static;transform:none;width:60px;height:60px;filter:none;margin-bottom:12px}
-body.lite .champ:hover .em{transform:none}
-body.lite .champ .tag{position:static;display:inline-block;margin-left:10px;background:#22222c;border-radius:4px;letter-spacing:0;text-transform:none}
-body.lite .champ small{animation:none;letter-spacing:0;text-transform:none;font-size:12px}
-body.lite .champ h3{font-size:24px}
-body.lite .champ .ex{letter-spacing:0;text-transform:none;font-size:13px}
-/* tournament page */
-body.lite .tabs{background:none;border:0;padding:0;border-bottom:1px solid #26262e;gap:0}
-body.lite .tabs a{clip-path:none;text-transform:none;letter-spacing:0;font-size:15px;border-radius:0;padding:10px 18px;background:none}
-body.lite .tabs a.on{background:none;color:#fff;box-shadow:inset 0 -2px var(--pink)}
-body.lite .box{background:#16161d;border:1px solid #26262e;border-radius:8px}
-body.lite .prize{background:none;-webkit-text-fill-color:var(--pink2);color:var(--pink2);font-size:38px;font-weight:700}
-body.lite .pod{border-radius:6px}
-body.lite .pod .fill{display:none}
-body.lite .team{clip-path:none;border-radius:6px;border-left-width:1px;background:#16161d}
-body.lite .team:hover{transform:none;background:#1c1c25}
-body.lite .team .seed{display:none}
-body.lite .crumb{text-transform:none;letter-spacing:0;font-size:14px}
-body.lite .pill{text-transform:none;letter-spacing:0;border-radius:4px}
-/* bracket */
-body.lite .bkh,body.lite .rd h5,body.lite .mt .no{text-transform:none;letter-spacing:0}
-body.lite .mt{border-radius:6px;overflow:hidden}
-body.lite .mt .s{text-transform:none;letter-spacing:0}
-body.lite svg.ln path.on{animation:none!important;stroke-dashoffset:0!important}
-body.lite .mt .rb{animation:none;text-transform:none;letter-spacing:0;border-radius:3px}
-/* forms / modal / admin */
-body.lite .mbox{clip-path:none;border-radius:10px;animation:none;border-top:0}
-body.lite .modal.on{animation:none}
-body.lite .f label,body.lite th,body.lite .kpi small{text-transform:none;letter-spacing:0;font-size:13px}
-body.lite .qr .code:after{display:none}
-body.lite .stp i.on:after{animation:none}
-body.lite .done .tick svg{animation:none;stroke-dashoffset:0}
-body.lite .adm-n{border-radius:8px}
-body.lite .adm-n a{text-transform:none;letter-spacing:0;font-size:14px}
-body.lite .kpi div{border-top:0;border:1px solid #26262e;border-radius:8px;background:#16161d}
-body.lite .kpi div:after{display:none}
-body.lite .tbl{border-radius:8px}
-body.lite .toast{border-radius:6px;animation:none}
-body.lite footer{background:#0e0e13;padding:40px 0 24px}
-body.lite footer h5{letter-spacing:0;text-transform:none;font-size:15px;color:#fff}
-body.lite .soc a{clip-path:none;border-radius:6px}
-body.lite .cp{text-transform:none;letter-spacing:0}
-body.lite .empty{background:none;border-radius:8px}
-body.lite .pg{animation:none}
-body.lite .rv{opacity:1;transform:none}
-@media(max-width:820px){body.lite .hero.lite-h h1{font-size:32px}}
-body.lite svg.ln path.on{filter:none}
-body.lite .bkc{background:none}
-body.lite .mt.adm:hover{box-shadow:none;transform:none;outline:1px solid var(--pink)}
-
 </style>
 </head>
 <body>
@@ -634,6 +537,34 @@ const Engine=(()=>{
 })();
 if(typeof module!=='undefined')module.exports=Engine;
 
+/* ===== Auth helpers: pure-JS SHA-256 (works everywhere, no WebCrypto needed) ===== */
+const Auth=(()=>{
+ const K=[],H0=[];
+ (function(){let n=2,c=0;const isP=x=>{for(let i=2;i*i<=x;i++)if(x%i===0)return false;return true};
+  while(c<64){if(isP(n)){K.push(Math.floor((Math.cbrt(n)%1)*4294967296)|0);if(c<8)H0.push(Math.floor((Math.sqrt(n)%1)*4294967296)|0);c++}n++}})();
+ const rr=(x,n)=>(x>>>n)|(x<<(32-n));
+ function sha256(str){
+  const b=new TextEncoder().encode(str),l=b.length,tot=((l+9+63)>>6)<<6,m=new Uint8Array(tot);
+  m.set(b);m[l]=0x80;const dv=new DataView(m.buffer);dv.setUint32(tot-4,(l*8)>>>0);dv.setUint32(tot-8,Math.floor(l*8/4294967296));
+  const H=H0.slice(),W=new Int32Array(64);
+  for(let o=0;o<tot;o+=64){
+   for(let i=0;i<16;i++)W[i]=dv.getInt32(o+i*4);
+   for(let i=16;i<64;i++){const a=W[i-15],c=W[i-2];W[i]=(W[i-16]+(rr(a,7)^rr(a,18)^(a>>>3))+W[i-7]+(rr(c,17)^rr(c,19)^(c>>>10)))|0}
+   let[a,b2,c2,d,e,f,g,h]=H;
+   for(let i=0;i<64;i++){
+    const t1=(h+(rr(e,6)^rr(e,11)^rr(e,25))+((e&f)^(~e&g))+K[i]+W[i])|0,t2=((rr(a,2)^rr(a,13)^rr(a,22))+((a&b2)^(a&c2)^(b2&c2)))|0;
+    h=g;g=f;f=e;e=(d+t1)|0;d=c2;c2=b2;b2=a;a=(t1+t2)|0;
+   }
+   [a,b2,c2,d,e,f,g,h].forEach((v,i)=>H[i]=(H[i]+v)|0);
+  }
+  return H.map(x=>(x>>>0).toString(16).padStart(8,'0')).join('');
+ }
+ /* salted with the lower-cased username; preview-grade only (stored in this browser) */
+ const hashPw=(name,pw)=>sha256('bg1|'+String(name).toLowerCase()+'|'+pw);
+ return{sha256,hashPw};
+})();
+if(typeof module!=='undefined')module.exports=Auth;
+
 /* ===== helpers ===== */
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -646,7 +577,7 @@ const initials=n=>{const w=String(n||'?').trim().split(/\s+/);return(w.length>1?
 
 /* ===== state ===== */
 /* LITE build = simpler sales demo (same look + animations, fewer features). The build script flips this flag. */
-const LITE=true;
+const LITE=/*LITE_FLAG*/false;
 const KEY=LITE?'bonaksu-demo-lite-v1':'bonaksu-hub-v2';
 if(LITE)document.body.classList.add('lite');
 const GAMES=['Valorant','Mobile Legends','Honor of Kings','League of Legends','Dota 2','CS2','Call of Duty','Other'];
@@ -1335,8 +1266,146 @@ function saveEv(id){
 function evPoster(inp){readImg(inp.files[0],1100,d=>{EF.poster=d;$('#pdi').innerHTML=`<b>Poster ready ✔</b><img src="${d}">`},.88)}
 function delEvent(id){const e=ev(id);askConfirm(`Delete "${e.name}" along with its teams and results?`,'Delete',()=>{S.events=S.events.filter(x=>x.id!==id);S.regs=S.regs.filter(r=>r.tid!==id);S.champs=S.champs.filter(c=>c.tid!==id);save();toast('Tournament deleted');render({quiet:true})})}
 
-/* Demo build: player-account and dashboard code is intentionally not included. */
-function rejectModal(id){setReg(id,'rejected')}
+/* ===== player accounts: sign up / log in ===== */
+const USERRX=/^[A-Za-z0-9_]{3,20}$/;
+let AUTH={mode:'login',after:null,reason:''};
+function openAuth(mode,after,reason){AUTH.after=after||null;AUTH.reason=reason||'';authModal(mode)}
+function authModal(mode){
+ AUTH.mode=mode;const su=mode==='signup';
+ openModal(`<h3>${su?'Create your account':'Welcome back'}</h3><div class="sub">${esc(AUTH.reason||(su?'Sign up to register teams, track payment status and get notified.':'Log in to register teams and follow your registrations.'))}</div>
+ <div class="tabs" style="margin-bottom:18px"><a class="${su?'':'on'}" onclick="authModal('login')">Log in</a><a class="${su?'on':''}" onclick="authModal('signup')">Sign up</a></div>
+ <div class="f">${su?`<label>Username<input id="au" maxlength="20" placeholder="e.g. night_owl" autocomplete="off" autocapitalize="none" spellcheck="false" onkeydown="if(event.key==='Enter')authGo()"></label><label>Email<input id="ae" type="email" placeholder="you@email.com" autocomplete="off" onkeydown="if(event.key==='Enter')authGo()"></label>`
+  :`<label>Username or email<input id="au" placeholder="username" autocomplete="off" autocapitalize="none" spellcheck="false" onkeydown="if(event.key==='Enter')authGo()"></label>`}
+ <label>Password<input id="ap" type="text" style="-webkit-text-security:disc" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="${su?'At least 6 characters':'Your password'}" onkeydown="if(event.key==='Enter')authGo()"></label>
+ ${su?`<label>Discord username <span style="opacity:.6">(optional)</span><input id="ad" placeholder="yourname" autocomplete="off" autocapitalize="none" onkeydown="if(event.key==='Enter')authGo()"></label>`:''}
+ <div id="aE" class="bad" style="min-height:18px;font-size:13px"></div>
+ <button class="btn full" onclick="authGo()">${su?'Create account':'Log in'}</button>
+ <div class="mut" style="font-size:12px;text-align:center;line-height:1.8">${su?'':'Sample account: <b style="color:#fff">player</b> / <b style="color:#fff">player123</b><br>'}Organizer? <a class="pk" onclick="showLogin()">Admin login →</a></div></div>`);
+ setTimeout(()=>{const i=$('#au');if(i)i.focus()},80);
+}
+function authGo(){
+ const su=AUTH.mode==='signup',u=($('#au').value||'').trim(),p=$('#ap').value||'',err=m=>{$('#aE').textContent=m;bad(m)};
+ if(su){
+  const e=($('#ae').value||'').trim(),d=(($('#ad')||{}).value||'').trim().replace(/^@/,'');
+  if(!USERRX.test(u))return err('Username: 3–20 letters, numbers or underscores');
+  if(!/^\S+@\S+\.\S+$/.test(e))return err('Enter a valid email address');
+  if(p.length<6)return err('Password must be at least 6 characters');
+  if(S.users.some(x=>x.name.toLowerCase()===u.toLowerCase()))return err('That username is already taken');
+  if(S.users.some(x=>x.email.toLowerCase()===e.toLowerCase()))return err('That email is already registered');
+  const nu={id:++S.nid,name:u,email:e,pass:Auth.hashPw(u,p),discord:d,dok:false,created:Date.now()};
+  S.users.push(nu);S.me=nu.id;
+  pushNote(nu.id,'Welcome to '+S.set.org+'!','Your account is ready. Browse tournaments and register your team.','#/tournaments');
+  notify('New player account',`**${u}** just signed up`,[['Email',e]]);
+ }else{
+  const x=S.users.find(x=>x.name.toLowerCase()===u.toLowerCase()||x.email.toLowerCase()===u.toLowerCase());
+  if(!x||x.pass!==Auth.hashPw(x.name,p))return err('Wrong username or password');
+  S.me=x.id;
+ }
+ save();const cb=AUTH.after;AUTH.after=null;closeM();chrome();render({quiet:true});
+ toast(su?'Account created – welcome!':'Welcome back, '+me().name);if(cb)setTimeout(cb,250);
+}
+function playerLogout(){S.me=null;save();chrome();if(parse()[0]==='me')go('#/');else render({quiet:true});toast('You have been logged out')}
+
+/* ===== player dashboard ===== */
+const pHead=(t,sub)=>admHead(t,sub,'','Player');
+function vMe(sec){
+ const u=me();
+ if(!u)return`<section style="padding-top:160px"><div class="wrap"><div class="empty"><b>Your account</b>Log in to see your registrations, matches and notifications.<br><br><div class="row" style="justify-content:center"><button class="btn" onclick="openAuth('login')">Log in</button><button class="btn w" onclick="openAuth('signup')">Sign up</button></div></div></div></section>`;
+ sec=sec||'overview';const un=unread();
+ const nav=[['overview','flag','My teams'],['notifications','bell','Notifications',un],['profile','users','Profile']];
+ return`<div class="wrap adm-w"><aside class="adm-n"><div style="padding:16px;display:flex;gap:12px;align-items:center;border-bottom:1px solid var(--line);margin-bottom:8px">${emblem({name:u.name},46)}<div><b style="font:700 17px var(--f);text-transform:uppercase">${esc(u.name)}</b><div class="mut" style="font-size:11px;letter-spacing:2px;text-transform:uppercase">Player</div></div></div>
+ ${nav.map(([k,ic,l,c])=>`<a class="${sec===k?'on':''}" href="#/me/${k}">${ICON[ic]}${l}${c?`<em>${c}</em>`:''}</a>`).join('')}<a onclick="playerLogout()" style="margin-top:8px;border-top:1px solid var(--line)">${ICON.flag}Log out</a></aside>
+ <div>${sec==='notifications'?meNotes():sec==='profile'?meProfile():meOverview()}</div></div>`;
+}
+function matchInfo(r,e,B){
+ if(!B)return e.status==='completed'?'':`<div class="nm"><small>Bracket</small><b>Not generated yet – we'll notify you when it's live</b></div>`;
+ const inB=B.M.some(m=>m.a.t===r.id||m.b.t===r.id);
+ if(!inB)return r.status==='paid'?`<div class="nm"><small>Bracket</small><b>Your team isn't in this bracket</b></div>`:'';
+ const rc=Engine.records(B)[r.id]||{w:0,l:0};
+ if(B.champion===r.id)return`<div class="nm win"><small>♛ Champion</small><b>You won ${esc(e.name)}!</b></div>`;
+ const next=B.M.find(m=>!m.done&&!m.auto&&(m.a.t===r.id||m.b.t===r.id));
+ if(next){const opp=next.a.t===r.id?next.b:next.a,on=opp.t!=null?rg(opp.t).name:null;
+  return`<div class="nm"><small>Next match · ${Engine.roundName(B,next.br,next.round)} · ${rc.w}W ${rc.l}L</small><b>${esc(r.name)} vs ${on?esc(on):'<i style="color:var(--mute)">waiting for opponent</i>'}</b></div>`}
+ return`<div class="nm"><small>${rc.w}W – ${rc.l}L</small><b>Your run in this tournament has ended</b></div>`;
+}
+function regCard(r){
+ const e=ev(r.tid);if(!e)return'';
+ const B=bk(e),inB=B&&B.M.some(m=>m.a.t===r.id||m.b.t===r.id),rej=r.status==='rejected';
+ const step=r.status==='paid'?(inB?4:3):2,steps=['Submitted','Payment review','Confirmed','In bracket'];
+ const canWd=!inB;
+ return`<div class="card cut regc"><div class="rch">${emblem(r,56)}<div style="flex:1;min-width:0"><h3>${esc(r.name)}</h3><div class="mut" style="font-size:13px">${esc(e.name)} · ${esc(e.game)} · ${money(e.fee)}</div></div><span class="chip ${r.status}">${r.status==='paid'?'confirmed':r.status}</span></div>
+ <div class="pst">${steps.map((s,i)=>`<div class="${i+1<step?'done':i+1===step?(rej?'bad':(r.status==='paid'?'done':'on')):''}"><i>${i+1<step||(r.status==='paid'&&i+1===step)?'✓':rej&&i+1===step?'✕':i+1}</i><span>${s}</span></div>`).join('')}</div>
+ ${rej?`<div class="note-r"><b>Rejected</b>${esc(r.reason||'Please upload a new payment proof.')}</div>`:''}
+ ${matchInfo(r,e,B)}
+ <div class="acts" style="margin-top:14px"><a class="btn sm g" href="#/t/${e.id}">Tournament</a><button class="btn sm o" onclick="teamModal(${r.id})">Roster</button>
+ ${r.shot?`<button class="btn sm o" onclick="viewShot(${r.id})">My proof</button>`:''}
+ ${r.status!=='paid'?`<label class="btn sm ${rej?'':'g'}">${rej?'Upload new proof':'Replace proof'}<input type="file" accept="image/*" hidden onchange="resubmit(${r.id},this)"></label>`:''}
+ ${canWd?`<button class="btn sm red" onclick="withdraw(${r.id})">Withdraw</button>`:''}</div>
+ <div class="mut" style="font-size:11px;letter-spacing:2px;margin-top:12px">REF ${esc(r.ref)}</div></div>`;
+}
+function meOverview(){
+ const u=me(),regs=myRegs().sort((a,b)=>b.created-a.created),conf=regs.filter(r=>r.status==='paid').length,pend=regs.filter(r=>r.status==='pending').length;
+ return pHead('Hello, '+esc(u.name),'Track your registrations, payments and matches.')+
+ `<div class="kpi"><div><small>My teams</small><b data-count="${regs.length}">0</b></div><div><small>Confirmed</small><b data-count="${conf}">0</b></div><div style="border-color:var(--amber)"><small>Pending review</small><b data-count="${pend}" style="color:var(--amber)">0</b></div><div><small>Unread alerts</small><b data-count="${unread()}">0</b></div></div>`+
+ (regs.length?`<div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(360px,1fr))">${regs.map(regCard).join('')}</div>`:`<div class="empty"><b>No teams yet</b>Register a team for an open tournament and you'll be able to track it here.<br><br><a class="btn" href="#/tournaments">Browse tournaments</a></div>`);
+}
+function meNotes(){
+ const l=myNotes();
+ return pHead('Notifications','Updates about your teams and matches.')+
+ (l.length?`<div class="row" style="margin-bottom:14px"><button class="btn sm g" onclick="readAll()">Mark all as read</button></div><div class="res">${l.map(n=>`<a class="note ${n.read?'':'new'}" href="${esc(n.link||'#/me')}" onclick="readNote(${n.id})"><b>${esc(n.title)}</b><span>${esc(n.body)}</span><small>${fmtD(n.t,{dateStyle:'medium',timeStyle:'short'})}</small></a>`).join('')}</div>`:'<div class="empty"><b>Nothing yet</b>We\'ll let you know when your payment is confirmed and when your matches are ready.</div>');
+}
+function readNote(id){const n=S.notes.find(x=>x.id===id);if(n){n.read=true;save();chrome()}}
+function readAll(){myNotes().forEach(n=>n.read=true);save();chrome();render({quiet:true})}
+function meProfile(){
+ const u=me();
+ return pHead('Profile','Your account details.')+
+ `<div class="box"><h3>Account</h3><div class="f"><div class="two"><label>Username<input value="${esc(u.name)}" disabled></label><label>Email<input id="pe" type="email" value="${esc(u.email)}"></label></div>
+ <label>Discord username <span style="opacity:.6">${u.dok?'· ✔ verified':'· not verified'}</span><input id="pd" value="${esc(u.discord||'')}" placeholder="yourname" autocomplete="off" oninput="me().dok=false"></label>
+ <div class="vf"><button type="button" class="btn sm g" onclick="verifyProfile()">Verify Discord membership</button><span id="pvs">${u.dok&&u.discord?'<span class="ok">✔ Member of our server</span>':''}</span></div></div></div>
+ <div class="box"><h3>Change password</h3><div class="f"><div class="two"><label>Current password<input id="pp0" type="text" style="-webkit-text-security:disc" autocomplete="off"></label><label>New password<input id="pp1" type="text" style="-webkit-text-security:disc" autocomplete="off" placeholder="At least 6 characters"></label></div></div></div>
+ <div class="row"><button class="btn" onclick="saveProfile()">Save changes</button></div>`;
+}
+function verifyProfile(){
+ const u=me(),v=($('#pd').value||'').trim().replace(/^@/,'');if(v.length<2)return toast('Enter your Discord username first');
+ $('#pvs').innerHTML='<span class="spin"></span> Checking server…';
+ setTimeout(()=>{const ok=v.toLowerCase()!=='notmember';u.discord=v;u.dok=ok;save();$('#pvs').innerHTML=ok?'<span class="ok">✔ Member of our server</span>':`<span class="bad">✖ Not found.</span> <a class="pk" href="${esc(S.set.discord)}" target="_blank" rel="noopener">Join first →</a>`},1100);
+}
+function saveProfile(){
+ const u=me(),e=($('#pe').value||'').trim(),d=($('#pd').value||'').trim().replace(/^@/,''),p0=$('#pp0').value,p1=$('#pp1').value;
+ if(!/^\S+@\S+\.\S+$/.test(e))return toast('Enter a valid email address');
+ if(S.users.some(x=>x.id!==u.id&&x.email.toLowerCase()===e.toLowerCase()))return toast('That email is already used by another account');
+ if(p0||p1){if(u.pass!==Auth.hashPw(u.name,p0))return toast('Your current password is incorrect');if(p1.length<6)return toast('New password must be at least 6 characters');u.pass=Auth.hashPw(u.name,p1)}
+ if(d!==u.discord){u.discord=d;u.dok=false}u.email=e;save();toast('Profile saved ✔');render({quiet:true});
+}
+function withdraw(id){
+ const r=rg(id),e=ev(r.tid);
+ askConfirm(`Withdraw "${r.name}" from ${e.name}? Your slot will be released.`,'Withdraw',()=>{
+  S.regs=S.regs.filter(x=>x.id!==id);save();
+  notify('Registration withdrawn',`**${r.name}** withdrew from **${e.name}**`,[['Captain',r.captain],['Reference',r.ref]]);
+  toast('Registration withdrawn');render({quiet:true})});
+}
+function resubmit(id,inp){
+ readImg(inp.files[0],900,v=>{const r=rg(id);r.shot=v;r.status='pending';r.reason='';save();
+  notify('Payment proof updated',`**${r.name}** uploaded a new payment proof for **${ev(r.tid).name}**`,[['Reference',r.ref],['Status','Pending review']]);
+  toast('New proof uploaded – back in review ✔');render({quiet:true})},.75);
+}
+
+/* ===== admin: players + rejection reason ===== */
+function admPlayers(){
+ return admHead('Players','Accounts created on your site.')+
+ (S.users.length?`<div class="tbl"><table><tr><th>Player</th><th>Email</th><th>Discord</th><th>Teams</th><th>Joined</th><th></th></tr>${S.users.map(u=>`<tr><td>${emblem({name:u.name},34)}<b>${esc(u.name)}</b></td><td>${esc(u.email)}</td><td>${esc(u.discord||'—')} ${u.dok?'<span class="chip paid">verified</span>':''}</td><td>${S.regs.filter(r=>r.uid===u.id).length}</td><td>${fmtD(u.created,{dateStyle:'medium'})}</td><td><button class="btn sm red" onclick="delUser(${u.id})">Delete</button></td></tr>`).join('')}</table></div>`:'<div class="empty"><b>No players yet</b>Accounts appear here as people sign up.</div>');
+}
+function delUser(id){const u=S.users.find(x=>x.id===id);askConfirm(`Delete the account "${u.name}"? Their registrations stay, but are no longer linked to an account.`,'Delete account',()=>{S.users=S.users.filter(x=>x.id!==id);S.regs.forEach(r=>{if(r.uid===id)r.uid=null});S.notes=S.notes.filter(n=>n.uid!==id);if(S.me===id)S.me=null;save();chrome();toast('Account deleted');render({quiet:true})})}
+function rejectModal(id){
+ if(LITE){setReg(id,'rejected');return}
+ const r=rg(id);
+ openModal(`<h3>Reject registration</h3><div class="sub">${esc(r.name)} · ${esc(ev(r.tid)?.name||'')}. The player will see your reason and can upload a new proof.</div>
+ <div class="f"><label>Reason<textarea id="rjr" rows="3" placeholder="e.g. The amount doesn't match the entry fee.">${esc(r.reason||'')}</textarea></label>
+ <div class="row" style="gap:8px">${['Amount does not match the entry fee','Screenshot is unclear','Payment not received yet'].map(t=>`<button type="button" class="btn sm g" onclick="$('#rjr').value=this.textContent">${t}</button>`).join('')}</div></div>
+ <div class="row" style="margin-top:22px;justify-content:flex-end"><button class="btn g" onclick="closeM()">Cancel</button><button class="btn red" onclick="doReject(${id})">Reject registration</button></div>`);
+}
+function doReject(id){const t=($('#rjr').value||'').trim();closeM();setReg(id,'rejected',t)}
+
 /* ===== chrome: header, drawer, footer ===== */
 function chrome(){
  const s=S.set,u=LITE?null:me(),un=u?unread():0,links=[['home','#/','Home'],['tournaments','#/tournaments','Tournaments'],['champions','#/champions','Champions']];
